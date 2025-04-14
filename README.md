@@ -1,7 +1,7 @@
 
-# Algoritmos de Ordenação: Selection Sort e Insertion Sort
+# Algoritmos de Ordenação: Insertion Sort
 
-Este projeto contém implementações dos algoritmos de ordenação **Selection Sort** e **Insertion Sort** em C++. Cada versão inclui exemplos práticos e, no caso otimizado, mostra o passo a passo da ordenação.
+Este projeto contém implementações dos algoritmos de ordenação **Insertion Sort** em C++. Possui exemplos práticos e, no caso otimizado, mostra o passo a passo da ordenação.
 
 ---
 
@@ -19,7 +19,7 @@ Este projeto contém implementações dos algoritmos de ordenação **Selection 
 - In-place: ✅
 
 ### 📂 Arquivos:
-- `select_sort.cpp`: implementação básica.
+- `insertion_sort.cpp`: implementação básica.
 - `select_sort_otimizado.cpp`: mostra o vetor a cada troca.
 
 ---
@@ -59,24 +59,7 @@ O programa mostra:
 
 ---
 
-## 💻 Compilação
-
-Use o `g++` para compilar:
-
-```bash
-g++ insertion_sort.cpp -o insertion_sort
-./insertion_sort
-```
-
-Ou para o Insertion Sort otimizado:
-
-```bash
-g++ insertion_sort_otimizado.cpp -o insertion_sort_otimizado
-./insertion_sort_otimizado
-```
-
----
 
 ## 📚 Objetivo
 
-Este projeto visa auxiliar no entendimento dos algoritmos de ordenação e no acompanhamento de seu funcionamento passo a passo, ideal para fins educacionais.
+Este projeto visa auxiliar no entendimento dos algoritmos de ordenação e no acompanhamento de seu funcionamento passo a passo.
