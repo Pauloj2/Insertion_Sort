@@ -5,26 +5,10 @@ Este projeto contém implementações dos algoritmos de ordenação **Insertion 
 
 ---
 
-## ✅ Selection Sort
-
-### 📌 Como funciona:
-- Encontra o menor elemento e o coloca na primeira posição.
-- Repete o processo para a sublista restante.
-- É um algoritmo simples, porém ineficiente para grandes volumes de dados.
-
-### 🔁 Complexidade:
-- Pior caso: O(n²)
-- Melhor caso: O(n²)
-- Estável: ❌
-- In-place: ✅
-
-### 📂 Arquivos:
-- `insertion_sort.cpp`: implementação básica.
-- `select_sort_otimizado.cpp`: mostra o vetor a cada troca.
-
----
-
 ## ✅ Insertion Sort
+<a href="https://pt.wikipedia.org/wiki/Ficheiro:Insertion_sort_animation.gif">
+    <img src="https://github.com/user-attachments/assets/652d0222-94be-4492-ae12-a60744a2637b" alt="Insertion_sort_animation" align="right" width="250" height="250">
+</a>
 
 ### 📌 Como funciona:
 - Considera que o primeiro elemento está ordenado.
@@ -43,13 +27,15 @@ Este projeto contém implementações dos algoritmos de ordenação **Insertion 
 
 ---
 
-## ▶️ Exemplo de execução:
+## ▶️ Prints da função
+- Função Insertion Sort
+  
+![image](https://github.com/user-attachments/assets/16eccf4a-df78-45e2-ab94-f7bd4c3a4803)
 
-Dado o vetor:
+- Função Insertion Sort Otimizada
 
-```
-40, 1, 23, 20, 67, 44, 9, 18, 0, 99
-```
+![image](https://github.com/user-attachments/assets/9ef068e7-545e-4cfa-b1bc-e2cafc2c7097)
+
 
 O programa mostra:
 
