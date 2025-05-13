@@ -30,17 +30,14 @@ def bubble_sort(array):
 /* Questão 3
 
 Ao fazer o teste de mesa, cheguei a 16 trocas.
-
 */
+
 
 /* Questão 4
 
 a) Não começa da posição 0, então ignora o primeiro elemento. Compromete a ordenação.
-
 b) Executa uma iteração a mais, mas não compromete a ordenação.
-
 c) Não compromete a ordenação, mas compromete a estabilidade, pois pode trocar elementos com valores iguais.
-
 A compromete a ordenação.
 C afeta a estabilidade.
 B aumenta comparações, mas não compromete.
@@ -52,9 +49,8 @@ O algoritmo percorre a lista procurando o menor valor e coloca-o no início.
 
 a) Pior caso vetor decrescente
 b) Melhor caso vetor já ordenado
-O Selection Sort não otimiza para melhor caso → mesmo número de comparações: 10.
+O Selection Sort não otimiza para melhor caso mesmo número de comparações: 10.
 A diferença está nas trocas (nenhuma troca no melhor caso).
-
 */
 
 /*Questão 6
@@ -68,7 +64,6 @@ for j in range(1, n):
         v[i + 1] = v[i]
         i -= 1
     v[i + 1] = x
-
 */
 
 /* Questão 7 
@@ -85,7 +80,6 @@ def insertion_sort_rec(v, n):
         v[j + 1] = v[j]
         j -= 1
     v[j + 1] = ultimo
-
 */
 
 
