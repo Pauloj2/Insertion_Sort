@@ -1,0 +1,92 @@
+/*Correção da prova*/
+
+
+/* Questão 1
+problema no codigo
+n não foi definido (deveria ser len(lista)).
+O uso de sim = True dentro do if faz com que, mesmo se a lista estiver fora de ordem apenas em uma posição intermediária, sim possa ser True incorretamente em outras iterações.
+A verificação deve retornar False assim que encontrar um erro.
+*/
+
+def verifica(lista):
+    for i in range(len(lista) - 1):
+        if lista[i] > lista[i + 1]:
+            return False
+    return True
+
+/* Questão 2*/
+
+def bubble_sort(array):
+    tamanho = len(array)
+    for i in range(tamanho):
+        trocou = False
+        for j in range(0, tamanho - 1 - i):
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
+                trocou = True
+        if not trocou:
+            break
+
+/* Questão 3
+
+Ao fazer o teste de mesa, cheguei a 16 trocas.
+
+*/
+
+/* Questão 4
+
+a) Não começa da posição 0, então ignora o primeiro elemento. Compromete a ordenação.
+
+b) Executa uma iteração a mais, mas não compromete a ordenação.
+
+c) Não compromete a ordenação, mas compromete a estabilidade, pois pode trocar elementos com valores iguais.
+
+A compromete a ordenação.
+C afeta a estabilidade.
+B aumenta comparações, mas não compromete.
+Risco de execução: B pode afetar performance levemente.
+O algoritmo percorre a lista procurando o menor valor e coloca-o no início.
+*/
+
+/* Questão 5
+
+a) Pior caso vetor decrescente
+b) Melhor caso vetor já ordenado
+O Selection Sort não otimiza para melhor caso → mesmo número de comparações: 10.
+A diferença está nas trocas (nenhuma troca no melhor caso).
+
+*/
+
+/*Questão 6
+
+Erro no codigo Atribuição incorreta dentro do laço. O valor x deve ser inserido apenas uma vez na posição correta após o laço.
+codigo correto 
+for j in range(1, n):
+    x = v[j]
+    i = j - 1
+    while i >= 0 and v[i] > x:
+        v[i + 1] = v[i]
+        i -= 1
+    v[i + 1] = x
+
+*/
+
+/* Questão 7 
+
+Implementação recursiva do Insertion Sort
+
+def insertion_sort_rec(v, n):
+    if n <= 1:
+        return
+    insertion_sort_rec(v, n - 1)
+    ultimo = v[n - 1]
+    j = n - 2
+    while j >= 0 and v[j] > ultimo:
+        v[j + 1] = v[j]
+        j -= 1
+    v[j + 1] = ultimo
+
+*/
+
+
+
